@@ -1,0 +1,23 @@
+{
+    "name": "Woningnet login",
+    "version": "0.1",
+    "description": "Onthoud uw woningnet login met deze extensie (by Menollo)",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.woningnet.nl/*"
+            ],
+            "js": [
+                "jquery-1.7.1.min.js",
+                "woningnet.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": false
+        }
+    ],
+    "icons": {
+        "16": "woningnet-16.png",
+        "48": "woningnet-48.png",
+        "128": "woningnet-128.png"
+    }
+}
